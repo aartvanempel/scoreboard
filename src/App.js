@@ -4,7 +4,7 @@ import PlayerList from './containers/PlayerList/PlayerList'
 
 const App = () => (
     <div>
-        <h1>Test</h1>
+        <h1>Scoreboard</h1>
         <AddPlayer/>
         <PlayerList/>
     </div>
