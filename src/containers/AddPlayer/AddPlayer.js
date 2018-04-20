@@ -17,7 +17,9 @@ class AddPlayer extends Component {
 
     onChangeHandler = e => this.setState({value: e.target.value})
 
-    onClickHandler = () => {
+    onClickHandler = (e) => {
+        e.preventDefault()
+
         if (!this.state.value.length) return
 
         this.props.addPlayer({
@@ -31,15 +33,15 @@ class AddPlayer extends Component {
 
     render() {
         return (
-            <div>
+            <form onSubmit={e => this.onClickHandler(e)}>
                 <input
                     value={this.state.value}
                     onChange={this.onChangeHandler}
                 />
-                <button onClick={() => this.onClickHandler()}>
+                <button type='submit'>
                     Add player
                 </button>
-            </div>
+            </form>
         )
     }
 }
