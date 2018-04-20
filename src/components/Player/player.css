@@ -1,0 +1,16 @@
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 0;
+    background-color: #dff9fb;
+}
+
+.player:nth-child(even) {
+    background-color: #c7ecee;
+}
+
+h2 {
+    margin: 0;
+}
