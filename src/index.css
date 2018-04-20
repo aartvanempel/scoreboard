@@ -37,6 +37,9 @@ header {
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     color: #303952;
     background-color: #fff;
