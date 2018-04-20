@@ -1,0 +1,33 @@
+.add-player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    background-color: #778beb;
+}
+
+.add-player input {
+    flex-grow: 1;
+    border: none;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.add-player input::placeholder {
+    color: #dfe4ea;
+}
+
+.add-player button {
+    height: 100%;
+    margin-left: 12px;
+    font-size: 16px;
+    padding: 8px;
+    color: #546de5;
+}
+
+@media only screen and (min-width: 640px) {
+    .add-player {
+        border-radius: 8px;
+    }
+}

@@ -1,16 +1,48 @@
 .player {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 16px 0;
-    background-color: #dff9fb;
+    background-color: #fff;
+    overflow: hidden;
 }
 
-.player:nth-child(even) {
-    background-color: #c7ecee;
+.player + .player {
+    margin-top: 12px;
 }
 
-h2 {
+.player h2 {
     margin: 0;
+    padding-left: 16px;
+    text-transform: capitalize;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    border-left: 12px solid #f6f6f6;
+}
+
+.score button {
+    height: 64px;
+    width: 64px;
+    font-size: 32px;
+}
+
+.score span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 64px;
+    padding: 0 8px;
+    font-weight: bold;
+    background-color: #f6f6f6;
+    color: #778beb;
+}
+
+@media only screen and (min-width: 640px) {
+    .player {
+        border-radius: 8px;
+    }
 }

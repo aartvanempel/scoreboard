@@ -6,7 +6,7 @@ import './index.css'
 const App = () => (
     <div className="app-container">
         <header>
-            <h1>Scoreboard</h1>
+            <h1>👏🏻 scoreboard 👏🏻</h1>
             <AddPlayer/>
         </header>
         <PlayerList/>

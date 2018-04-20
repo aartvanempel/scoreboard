@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: sans-serif;
+    color: #303952;
 }
 
 body {
     margin: 0;
+    background-color: #f6f6f6;
 }
 
 .app-container {
@@ -15,15 +21,23 @@ body {
 }
 
 h1 {
-    margin: 0 0 16px 0;
+    margin: 0 0 32px 0;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 4px;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 32px 0;
 }
 
-@media only screen and (min-width: 640px) {
-    .app-container {
-        margin-top: 32px;
-    }
+button {
+    border: none;
+    color: #303952;
+    background-color: #fff;
 }

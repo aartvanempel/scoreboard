@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addPlayer } from '../../actions/index'
+import './add-player.css'
 
 const mapStateToProps = ({players}) => ({
     players
@@ -33,8 +34,11 @@ class AddPlayer extends Component {
 
     render() {
         return (
-            <form onSubmit={e => this.onClickHandler(e)}>
+            <form
+                className='add-player'
+                onSubmit={e => this.onClickHandler(e)}>
                 <input
+                    placeholder="Player's name"
                     value={this.state.value}
                     onChange={this.onChangeHandler}
                 />

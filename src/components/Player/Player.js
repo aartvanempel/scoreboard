@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { incrementScore, decrementScore } from "../../actions/index"
+import { incrementScore, decrementScore } from '../../actions/index'
 import './player.css'
 
 const mapDispatchToProps = dispatch => ({
@@ -9,15 +9,17 @@ const mapDispatchToProps = dispatch => ({
 })
 
 const Player = ({id, name, score, incrementScore, decrementScore}) => (
-    <li className="player">
+    <li className='player'>
         <h2>{name}</h2>
-        <button onClick={() => decrementScore(id)}>
-            -
-        </button>
-        <span>{score}</span>
-        <button onClick={() => incrementScore(id)}>
-            +
-        </button>
+        <div className='score'>
+            <button onClick={() => decrementScore(id)}>
+                -
+            </button>
+            <span>{score}</span>
+            <button onClick={() => incrementScore(id)}>
+                +
+            </button>
+        </div>
     </li>
 )
 
