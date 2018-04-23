@@ -18,7 +18,7 @@ class AddPlayer extends Component {
 
     onChangeHandler = e => this.setState({value: e.target.value})
 
-    onClickHandler = (e) => {
+    onSubmitHandler = (e) => {
         e.preventDefault()
 
         if (!this.state.value.length) return
@@ -36,7 +36,7 @@ class AddPlayer extends Component {
         return (
             <form
                 className='add-player'
-                onSubmit={e => this.onClickHandler(e)}>
+                onSubmit={e => this.onSubmitHandler(e)}>
                 <input
                     placeholder="Player's name"
                     value={this.state.value}
