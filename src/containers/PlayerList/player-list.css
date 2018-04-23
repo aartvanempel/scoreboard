@@ -3,3 +3,13 @@
     padding: 0;
     margin: 0;
 }
+
+.player-transition-enter {
+    transform: rotateX(-90deg);
+    transform-origin: center top;
+}
+
+.player-transition-enter.player-transition-enter-active {
+    transform: rotateX(0);
+    transition: all 350ms ease-out;
+}

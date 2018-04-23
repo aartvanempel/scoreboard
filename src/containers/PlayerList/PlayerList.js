@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Player from '../../components/Player/Player'
 import './player-list.css'
 
@@ -9,10 +10,16 @@ const mapStateToProps = state => ({
 
 const PlayerList = ({players}) => (
     <ul className="player-list">
-        { players.map(player => {
-            const props = player
-            return <Player key={props.id} {...props} />
-        }) }
+        <ReactCSSTransitionGroup
+            transitionName='player-transition'
+            transitionEnterTimeout={350}
+            transitionLeaveTimeout={350}
+        >
+            {players.map(player => {
+                const props = player
+                return <Player key={props.id} {...props} />
+            })}
+        </ReactCSSTransitionGroup>
     </ul>
 )
 
