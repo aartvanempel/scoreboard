@@ -13,8 +13,11 @@
 
 .player h2 {
     margin: 0;
-    padding-left: 16px;
+    padding: 0 16px;
     text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .score {
