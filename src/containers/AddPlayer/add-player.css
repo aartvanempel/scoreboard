@@ -10,6 +10,7 @@
 .add-player input {
     flex-grow: 1;
     border: none;
+    border-radius: 0;
     font-size: 16px;
     padding: 8px 12px;
 }
