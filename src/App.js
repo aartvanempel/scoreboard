@@ -3,8 +3,6 @@ import AddPlayer from './containers/AddPlayer/AddPlayer'
 import PlayerList from './containers/PlayerList/PlayerList'
 import './index.css'
 
-// test
-
 const App = () => (
     <div className="app-container">
         <header>
