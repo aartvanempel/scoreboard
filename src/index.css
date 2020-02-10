@@ -3,13 +3,13 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Merriweather', serif;
     color: #303952;
 }
 
 body {
     margin: 0;
-    background-color: #f6f6f6;
+    background-color: #fafafa;
 }
 
 .app-container {
@@ -33,7 +33,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 16px 0;
 }
 
 button {
@@ -46,6 +45,9 @@ button {
 }
 
 @media only screen and (min-width: 640px) {
+    body {
+        background-color: #ffffff;
+    }
     h1 {
         margin-bottom: 32px;
     }

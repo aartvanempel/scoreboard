@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     padding: 16px;
-    background-color: #778beb;
+    background-color: #34495E;
 }
 
 .add-player input {
@@ -13,6 +13,7 @@
     border-radius: 0;
     font-size: 16px;
     padding: 8px 12px;
+    font-family: 'Merriweather', serif;
 }
 
 .add-player input::placeholder {
@@ -20,11 +21,13 @@
 }
 
 .add-player button {
+    font-family: 'Merriweather', serif;
     height: 100%;
     margin-left: 12px;
     font-size: 16px;
-    padding: 8px;
-    color: #546de5;
+    padding: 8px 12px;
+    color: #34495E;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 640px) {

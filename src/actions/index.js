@@ -3,12 +3,14 @@ export const addPlayer = player => ({
     player
 })
 
-export const incrementScore = id => ({
+export const incrementScore = (id, value) => ({
     type: 'INCREMENT_SCORE',
-    id
+    id,
+    value
 })
 
-export const decrementScore = id => ({
+export const decrementScore = (id, value) => ({
     type: 'DECREMENT_SCORE',
-    id
+    id,
+    value
 })

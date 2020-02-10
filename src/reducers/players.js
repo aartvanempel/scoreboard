@@ -6,13 +6,13 @@ const players = (state = [], action) => {
 
         case 'INCREMENT_SCORE':
             return state.map(player => {
-                if (player.id === action.id) player.score++
+                if (player.id === action.id) player.score = player.score + action.value;
                 return player
             })
 
         case 'DECREMENT_SCORE':
             return state.map(player => {
-                if (player.id === action.id) player.score--
+                if (player.id === action.id) player.score = player.score - action.value;
                 return player
             })
 

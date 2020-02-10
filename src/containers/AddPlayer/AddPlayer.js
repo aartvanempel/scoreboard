@@ -38,12 +38,12 @@ class AddPlayer extends Component {
                 className='add-player'
                 onSubmit={e => this.onSubmitHandler(e)}>
                 <input
-                    placeholder="Player's name"
+                    placeholder="Monster's name"
                     value={this.state.value}
                     onChange={this.onChangeHandler}
                 />
                 <button type='submit'>
-                    Add player
+                    Add
                 </button>
             </form>
         )

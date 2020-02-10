@@ -1,56 +1,77 @@
 .player {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
-    background-color: #fff;
     overflow: hidden;
+    padding: 16px;
+    padding-bottom: 52px;
+    background-color: #fff;
 }
 
-.player + .player {
-    margin-top: 12px;
+.player:last-child {
+    border-bottom: 2px solid #CDD9E4;
 }
 
 .player h2 {
+    font-size: 16px;
     margin: 0;
-    padding: 0 16px;
     text-transform: capitalize;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 320px;
+}
+
+.player h2::before {
+    content: '';
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #E74C3C;
+}
+
+.player-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
 .score {
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    border-left: 12px solid #f6f6f6;
+    font-size: 20px;
 }
 
-.score button {
-    height: 48px;
-    width: 48px;
-    font-size: 32px;
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.score span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 64px;
-    padding: 0 8px;
-    font-weight: bold;
-    background-color: #f6f6f6;
-    color: #778beb;
+.buttons-container button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #EAECEE;
+    border: 2px solid #34495E;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 640px) {
     .player {
-        border-radius: 8px;
+        padding-left: 4px;
+        padding-right: 4px;
     }
 
-    .score button {
-        height: 54px;
-        width: 54px;
+    .player h2 {
+        max-width: 640px;
+    }
+
+    .player:last-child {
+        border-bottom: none;
     }
 }
